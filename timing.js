@@ -1,5 +1,4 @@
 const timeTbl = document.querySelector('.time-table');
-timeTbl.textContent = 'Расписание занятий';
 schedule.forEach((element) => {
   const newLesson = document.createElement('li');
   newLesson.classList.add('lesson');
@@ -14,7 +13,11 @@ schedule.forEach((element) => {
   newLesson.classList.add('lesson');
   const enterBtn = document.createElement('button');
   enterBtn.textContent = 'Записаться';
+  enterBtn.classList.add('btn');
+  enterBtn.classList.add('btn-primary');
   const deleteBtn = document.createElement('button');
+  deleteBtn.classList.add('btn');
+  deleteBtn.classList.add('btn-primary');
   deleteBtn.textContent = 'Отменить запись';
   newLesson.append(dateEl);
   newLesson.append(dispEl);
