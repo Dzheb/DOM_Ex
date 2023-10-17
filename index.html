@@ -12,6 +12,10 @@
     />
     <title>Document</title>
     <style>
+      .wrapper {
+        display: flex;
+        justify-content: space-around;
+      }
       .time-table {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -35,11 +39,16 @@
       .btn {
         margin: 8px;
       }
+      li {
+        list-style-type: none;
+      }
     </style>
   </head>
   <body>
     <div class="title">Расписание занятий</div>
-    <ul class="time-table"></ul>
+    <div class="wrapper">
+      <ul class="time-table"></ul>
+    </div>
     <script src="schedule.js"></script>
     <script src="timing.js"></script>
   </body>
